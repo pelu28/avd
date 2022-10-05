@@ -23,7 +23,7 @@ $registryValues.Add(@{key = 'IsDynamic'; value = 1; type = 'DWORD'; path = $regi
 # Ensures that VHDx is used with fslogix profiles 
 $registryValues.Add(@{key = 'VolumeType'; value = VHDx; type = 'String'; path = $registryPath })
 # Add redir config source folder
-$registryValues.Add(@{key = 'RedirXMLSourceFolder'; value = $FSLogixRedirFolder; type = 'String'; path = $registryPath })
+# $registryValues.Add(@{key = 'RedirXMLSourceFolder'; value = $FSLogixRedirFolder; type = 'String'; path = $registryPath })
 
 # Install FSLogix
 $fslogixTemp = $env:TEMP
