@@ -21,7 +21,7 @@ $registryValues.Add(@{key = 'FlipFlopProfileDirectoryName'; value = 1; type = 'D
 # Sets profile VHDx to dynamic size does not use max size but expands 
 $registryValues.Add(@{key = 'IsDynamic'; value = 1; type = 'DWORD'; path = $registryPath })
 # Ensures that VHDx is used with fslogix profiles 
-$registryValues.Add(@{key = 'VolumeType'; value = VHDx; type = 'String'; path = $registryPath })
+$registryValues.Add(@{key = 'VolumeType'; value = 'vhdx'; type = 'String'; path = $registryPath })
 # Add redir config source folder
 # $registryValues.Add(@{key = 'RedirXMLSourceFolder'; value = $FSLogixRedirFolder; type = 'String'; path = $registryPath })
 
