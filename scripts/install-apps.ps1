@@ -4,4 +4,5 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 choco install git.install azure-cli --force -y
 choco install pwsh --force -y
 #Install az module 
+Install-PackageProvider -Name Nuget -MinimumVersion 2.8.5.201 -Force
 Install-Module -Name Az -Scope AllUsers -Repository PSGallery -Force -AllowClobber
